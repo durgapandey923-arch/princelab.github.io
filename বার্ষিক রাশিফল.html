@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>বার্ষিক রাশিফল</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function displayMessage() {
+            // Get the element with the id "message"
+            var messageElement = document.getElementById("message");
+            // Change the text content of the element
+            messageElement.textContent = "দাদা রোল কবে খাওয়াবে?";
+            // Optional: Change the color to make it stand out
+            messageElement.style.color = "green";
+        }
+    </script>
+</head>
+<body>
+    <img src="https://www.astrologerumesh.com/wp-content/uploads/Yearly-Horoscope-2026.png" height="400" width="650">
+    <h2 style="color:red;font-size:45px">আপনার বার্ষিক রাশিফল ​​​​জানুন!</h2>
+    <form>
+        <label style="font-size:25px; "for="user_name">আপনার নাম:</label>
+        <input type="text" id="user_name" name="username" placeholder="আপনার নাম লিখুন">
+        <br>
+        <lable for="dob">জন্ম তারিখ:</lable>
+        <input type="text" id="dob" name="date_of_birth" placeholder="01/01/1990">
+        <br>
+        <lable for="moonsign">আপনার রাশিচক্র</lable>
+        <select name="moon_sign">
+            <option value="১. মেষ">মেষ : ২১ মার্চ - ২০ এপ্রিল</option>
+            <option value="২. বৃষ">বৃষ : ২১ এপ্রিল - ২০ মে</option>
+            <option value="৩. মিথুন">মিথুন : ২১ মে - ২০ জুন</option>
+            <option value="৪. কর্কট">কর্কট : ২১ জুন - ২০ জুলাই</option>
+            <option value="৫. সিংহ">সিংহ : ২১ জুলাই - ২১ আগস্ট</option>
+            <option value="৬. কন্যা">কন্যা : ২২ আগস্ট - ২২ সেপ্টেম্বর</option>
+            <option value="৭. তুলা">তুলা : ২৩ সেপ্টেম্বর - ২২ অক্টোবর</option>
+            <option value="৮. বৃশ্চিক">বৃশ্চিক : ২৩ অক্টোবর - ২১ নভেম্বর</option>
+            <option value="৯. ধনু">ধনু : ২২ নভেম্বর - ২০ ডিসেম্বর</option>
+            <option value="১০. মকর">মকর : ২১ ডিসেম্বর - ১৯ জানুয়ারি</option>
+            <option value="১১. কুম্ভ">কুম্ভ : ২০ জানুয়ারি - ১৮ ফেব্রুয়ারি</option>
+            <option value="১২. মীন">মীন : ১৯ ফেব্রুয়ারি - ২০ মার্চ </option>
+        </select>
+        <br>
+
+    <!-- A button that calls the 'displayMessage' JavaScript function when clicked -->
+    <button type="button" onclick="displayMessage()">
+        জমা করুন
+    </button>
+    <button type="reset">পরিষ্কার করুন</button>
+
+    <!-- A paragraph element where the message will be displayed -->
+    <p style="font-size:25px;" id="message"></p>
+
+</body>
+</html>
